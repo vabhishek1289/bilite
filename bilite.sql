@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 19, 2017 at 07:53 AM
+-- Generation Time: Aug 19, 2017 at 07:59 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -32,6 +32,7 @@ CREATE TABLE `user` (
   `storename` varchar(255) NOT NULL,
   `mobile` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `price` varchar(255) NOT NULL,
   `guarantee` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
